@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+}
+
+body {
+  font-family: monserat;
+  overflow-x: hidden;
+  background-image: url(image/arthur-mazi-qD5Err_lJ5Y-unsplash.jpg);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  background: linear-gradient(45deg, rgba(3, 0, 1, 0.2 03), rgb(2, 1, 2, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: space-around;
+  /* padding: 20px; */
+  color: rgb(234, 238, 11);
+  height: 50px;
+  align-items: center;
+  box-shadow: 1px 1px 10px grey;
+}
+
+nav .logo {
+  font-family: "Pacifico", cursive;
+}
+
+nav ul {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: rgb(254, 255, 169);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(234, 238, 11);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animayition */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+body {
+  width: 100%;
+  font: 16px/28px arial, sans-serif;
+  background-color: lightgrey;
+  color: rgb(54, 54, 54);
+  /* background: url(Gambar/repeated-square-dark.webp); */
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  backdrop-filter: blur(70px);
+  box-shadow: 1px 1px 20px whitesmoke;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header a {
+  padding: 3px;
+  color: rgb(79, 106, 180);
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: salmon;
+  color: white;
+}
+
+.hero {
+  height: 280px;
+  background: url(image/kvistholt-photography-oZPwn40zCK4-unsplash\ -\ Copy.jpg);
+  background-size: cover;
+  background-position: 0 -160px;
+  border-top: 5px solid salmon;
+  border-bottom: 5px solid salmon;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.content .penulis {
+  font-size: 11px;
+  margin: -5px;
+  margin-left: 1px;
+  padding-bottom: 10px;
+}
+
+.content .penulis a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer {
+  background-color: salmon;
+  padding: 10px;
+}
+
+.footer .copy {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Responsive Breakpoint */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    box-shadow: 1px 1px 20px grey;
+    backdrop-filter: blur(5px);
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    /* box-shadow: 1px 1px 100px grey; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(3, 0, 1, 0.2 03), rgb(2, 1, 2, 0));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -2;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
