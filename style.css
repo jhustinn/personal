@@ -209,6 +209,7 @@ nav ul li a:hover {
 .content2 #project .card1 img {
   display: flex;
   margin-left: -20px;
+  margin: 20px;
   box-shadow: 0px 0px 20px rgb(22, 22, 22);
   border-radius: 40px;
 }
@@ -395,7 +396,6 @@ footer h1 {
 
   .content2 #project .card1 {
     position: relative;
-    left: 4%;
   }
 
   .content2 #project .card1 h1 {
