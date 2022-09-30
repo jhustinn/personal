@@ -208,7 +208,7 @@ nav ul li a:hover {
 
 .content2 #project .card1 img {
   display: flex;
-  margin: 20px;
+  margin-left: -20px;
   box-shadow: 0px 0px 20px rgb(22, 22, 22);
   border-radius: 40px;
 }
@@ -221,7 +221,7 @@ nav ul li a:hover {
 
 .content2 #project {
   display: flex;
-  padding: 20px;
+  padding: 40px;
   width: 95%;
   animation: changeBg 50s infinite alternate linear;
   border-radius: 40px;
