@@ -144,7 +144,7 @@ body {
 
 .hero {
   height: 280px;
-  background: url(image/carl-wang-OCe8cTGymSQ-unsplash.jpg");
+  background: url(image/kvistholt-photography-oZPwn40zCK4-unsplash\ -\ Copy.jpg);
   background-size: cover;
   background-position: 0 -160px;
   border-top: 5px solid salmon;
@@ -203,6 +203,10 @@ body {
 @media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
+  }
+
+  .container {
+    width: 90%;
   }
 
   nav {
