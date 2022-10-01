@@ -404,3 +404,10 @@ footer h1 {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 406px) {
+  .content2 #project .card1 {
+    position: relative;
+    left: -10%;
+  }
+}
